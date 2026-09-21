@@ -1,0 +1,27 @@
+# Frozen CIRCE configuration. Load with:
+#   from circe import CirceController
+#   ctl = CirceController.from_frozen("examples/frozen_config.yaml", model=..., task_id=...)
+
+alpha: 0.05
+delta: 0.05
+q0: 0.1
+patience: 1
+reprieve_rate: 0.05
+mode: full            # "halt" or "full" (full requires a fitted SuccessModel)
+
+stall:
+  max_novel_bytes_per_token: 1.0
+  max_test_pass_delta: 0
+  max_observation_novelty: 0.7
+
+eprocess:
+  prior_successes: 1.0
+  prior_failures: 1.0
+
+circe_full:
+  compact_context_threshold: 0.98
+  rewind_error_streak: 3
+  escalate_value_threshold: 0.5
+  max_rewinds: 2
+  max_compacts: 2
+  rewind_depth: 1
