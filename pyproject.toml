@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "circe"
 version = "0.1.0"
-description = "CIRCE: calibrated interruption via risk-controlled e-processes for black-box agent harnesses (core controller library)"
+description = "Self-Calibrating Interruption of Agent Doom Loops via Risk-Controlled E-processes"
 readme = "README.md"
 requires-python = ">=3.11"
 license = { text = "MIT" }
